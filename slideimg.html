@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gallery{
+            display: flex;
+            /* overflow-x: scroll; */
+           
+           
+        }
+        .gallery #img1 img{
+            width: 200px;
+             /* filter: grayscale(100%); 
+            transition: transform 0.5s;  */
+        }
+        .gallery #img1 img:hover{
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .gallery #img1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid: gap 20px;
+            padding: 10px;
+            flex: none;
+        }
+        /* .gallery::-webkit-scrollbar{
+            display: none;
+        } */
+        .gallry-wrap img{
+       width: 50px;
+        }
+        .gallry-wrap{
+            /* width: 80%;
+            height: 500px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+          
+        }
+        #back-img{
+            position: relative;
+            /* top: 390px; */
+            /* right: 130px; */
+            display: inline;
+        }
+        #backbtn,#nextbtn{
+            width: 50px;
+            margin: 40px;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallry-wrap">
+        <img src="./image/animal/back img.png" alt="" id="backbtn">
+        <div class="gallery">
+            <div id="img1">
+                <span><img src="./image/animal/image-1.jpg" alt=""></span>
+                <span><img src="./image/animal/image-2.jpg" alt=""></span>
+                <span><img src="./image/animal/image-9.jpg" alt=""></span>
+            </div>
+            <div id="img1">
+                <span><img src="./image/animal/image-1.jpg" alt=""></span>
+                <span><img src="./image/animal/image-2.jpg" alt=""></span>
+                <span><img src="./image/animal/image-9.jpg" alt=""></span>
+            </div>
+        </div>
+        <img src="./image/animal/next img.png " alt="" id="nextbtn">
+    </div>
+   
+    <script>
+        let scrollcontainer = document.getElementById("gallery")
+        let nextbtn = document.getElementById("nextbtn") 
+        let backbtn = document.getElementById("backbtn") 
+
+
+        scrollcontainer.addEventListener("while",(evt)=>{
+        scrollcontainer.scrollLeft +=evt.deltay;
+        scrollcontainer.style.scrollBehavior = "auto";
+
+        });
+        scrollcontainer.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += 900;
+
+        });
+        scrollcontainer.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= 900;
+
+        });
+
+    </script>
+</body>
+</html>

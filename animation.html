@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 40%;
+            height: 500px;
+            background-color: rgb(204, 222, 238);
+            /* border: 1px solid gold; */
+           
+            /* border-radius: 2000px; */
+            position: relative;
+            top: 20px;
+            left: 400px;
+        }
+        .boll{
+            width: 50px;
+            height:50px;
+            border: 1px solid rgb(35, 201, 85);
+            border-radius: 500px;
+            position: relative;
+            top: 10px;
+            left: 200px;
+            animation-name: my-animation ;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+       
+           @keyframes my-animation {
+                0% {
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                   
+     }
+                25% {
+                    position: relative;
+                    top: 0px;
+                    left: 500px;
+                    background-color: blueviolet;
+                  
+    }
+                 50% {
+                    position: relative;
+                    top: 500px;
+                    bottom: 900px;
+                    background-color: violet;
+                  
+    }
+                75% {
+                    position: relative;
+                    top: 500px;
+                    right: 900px;
+                    background-color: yellow;
+                  
+    }
+                 100% {  
+                    position: relative;
+                    /* left: 10px; */
+                    /* right: 100px; */
+                    background-color: aqua;
+                  
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boll">
+             
+        </div>
+    </div>
+</body>
+</html>

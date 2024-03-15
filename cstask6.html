@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li a{
+           margin: 30px;
+           text-decoration: none;
+           color: rgb(255, 255, 255);
+           font-size: 20px;
+           
+        }
+        .navbar ul li a:hover{
+            color: yellow;
+        }
+        .navbar ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+
+        }
+        .header img{
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+        }
+       
+        .header p{
+            position: absolute;
+            top: 300px;
+            left: 150px;
+            right: 150px;
+          
+        }
+        .header h2{
+            position: absolute;
+           left: 500px;
+           right: 500px;
+           font-size: 30px;
+           /* color: white; */
+           /* box-shadow: 5px 5px 5px white; */
+        }
+        .header button{
+            width: 120px;
+            height: 37px;
+            position: absolute;
+            top: 420px;
+            left: 150px;
+            right: 150px;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 20px 20px 20px rgb(168, 166, 166);
+        }
+
+
+
+
+
+
+
+
+        /* <!-- container change1 --> */
+
+
+
+
+
+
+        .container-1{
+            width: 100%;
+            height: 20vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+          
+        }
+    
+        .container-2{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+    .colom1{
+        width: 85%;
+        height: 80vh;
+        background-color: brown;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      
+    .box5{
+        position: relative;
+        top: 200px;
+        left: 90px;
+        color: white;
+    }
+    .box5 button{
+        width: 110px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 20px 20px 20px brown;
+        position: relative;
+        top: 20px;
+    }
+    .box2 img{
+        width: 100%;
+        height: 80vh;
+    }
+
+
+
+
+
+
+
+    /* <!-- container change 2 --> */
+
+
+
+
+
+
+
+
+
+
+
+    .container-1{
+            width: 100%;
+            height: 20vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+          
+        }
+    
+        .container-3{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+    .colom2{
+        width: 85%;
+        height: 80vh;
+        /* background-color: brown; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      
+    .box4{
+        position: relative;
+        top: 200px;
+        left: 90px;
+        color: white;
+    }
+    .box4 button{
+        width: 110px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 20px 20px 20px brown;
+        position: relative;
+        top: 20px;
+        background-color: brown;
+    }
+    .box3 img{
+        width: 100%;
+        height: 80vh;
+    }
+
+
+
+
+
+
+    /* <!-- container change 3 --> */
+
+
+
+
+
+
+
+
+
+
+    .container-1{
+            width: 100%;
+            height: 20vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+          
+        }
+    
+        .container-4{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+    .colom2{
+        width: 85%;
+        height: 80vh;
+        /* background-color: rgb(238, 199, 73); */
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      
+    .box1{
+        position: relative;
+        top: 200px;
+        left: 90px;
+        color: white;
+    }
+    .box1 button{
+        width: 110px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 20px 20px 20px brown;
+        position: relative;
+        top: 20px;
+        background-color: brown;
+    }
+    .box2 img{
+        width: 100%;
+        height: 80vh;
+    }
+
+
+
+
+
+
+
+    /* <!-- container change --> */
+
+
+
+
+
+    .container-1{
+            width: 100%;
+            height: 20vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+          
+        }
+    
+        .container-5{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+    .colom2{
+        width: 85%;
+        height: 80vh;
+        background-color: rgb(245, 208, 46);
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      
+    .box1{
+        position: relative;
+        top: 200px;
+        left: 90px;
+        color: white;
+    }
+    .box1 button{
+        width: 110px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 20px 20px 20px brown;
+        position: relative;
+        top: 20px;
+        background-color: brown;
+    }
+    .box2 img{
+        width: 100%;
+        height: 80vh;
+    } 
+
+    .container4{
+        width: 100%;
+        height: 100vh;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        /* margin: 20px; */
+    }
+    .box-1{
+        width: 265px;
+        height: 300px;
+        margin: 30px;
+        box-shadow: 5px 5px 5px 2px gray;
+        /* background-color: rgb(155, 62, 184); */
+    }
+
+    .box-1 img{
+         width: 265px;
+         height: 170px;
+    }
+    .box-1 p{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    }
+    .box-1 button{
+    width: 265px;
+    height: 33px;
+    position: relative;
+    top: 40px;
+    background-color: black;
+    color: white;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Discover</a>
+            </li>
+            <li>
+                <a href="">Blogs</a>
+            </li>
+            <li>
+                <a href="">Query</a>
+            </li>
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">content us</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="header"> 
+        <h2>
+            <b>Plan Your Trip</b>
+        </h2> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quisquam! Harum consequuntur, voluptatum culpa porro rem blanditiis beatae minus, dolore maxime quos repellendus amet veritatis nemo dolorem consequatur qui iste quo possimus inventore! Sint asperiores incidunt dolores iure fugit laborum! Doloribus quasi consequatur odio sed rem optio beatae corporis id provident necessitatibus! Magni voluptates quasi nisi distinctio recusandae totam, ipsam ipsum repellat repellendus temporibus iusto doloremque! Accusamus consequuntur sequi maiores? Quis dolor dolore sed doloribus neque consequuntur maiores in a, ea, numquam modi nihil perspiciatis non eveniet soluta iure saepe tempora dicta cum assumenda doloremque. Nisi labore placeat quam aliquam.
+               </p>
+               <button>Explore More</button>
+       <img src="image/travil thar img 3.jpg" alt="">
+      
+    </div>
+
+
+
+    <!-- container change 1-->
+
+
+    <div class="container-1">
+        <h1>
+            Discover our trip planner
+        </h1>
+        
+
+    </div>
+    <hr>
+
+
+    <div class="container-2">
+        <div class="colom1">
+            <div class="box5">
+                <h3>
+                    Create your own itinerary
+                </h3>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit <br>
+                . Quasi, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Modi, aliquid.
+             </p>
+             <button>Learn More</button>
+
+            </div>
+            <div class="box2">
+            <img src="image/car-girls road-trip.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+     <!-- container change 2 -->
+
+    
+    <div class="container-1">
+        <h1>
+            Useful information
+        </h1>
+        
+
+    </div>
+    <hr>
+
+
+    <div class="container-3">
+        <div class="colom2">
+            <div class="box3">
+                <img src="image/Road Trip 3.jpg" alt="">
+
+            </div>
+            <div class="box1">
+                <h3>
+                    Road Trip Guide
+                </h3>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit <br>
+                . Quasi, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Modi, aliquid.
+             </p>
+             <button>Learn More</button>
+           
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+     <!-- container change 3 -->
+
+    
+    <div class="container-1">
+        <h1>
+            Discover our trip planner
+        </h1>
+        
+
+    </div>
+    <hr>
+
+
+    <div class="container-4">
+        <div class="colom2">
+            <div class="box1">
+                <h3>
+                    Create your own itinerary
+                </h3>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit <br>
+                . Quasi, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Modi, aliquid.
+             </p>
+             <button>Learn More</button>
+
+            </div>
+            <div class="box2">
+            <img src="image/happy-family-6.webp" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+
+     <!-- container change 4 -->
+
+
+    
+     <div class="container-1">
+        <h1>
+            Useful information
+        </h1>
+        
+
+    </div>
+    <hr>
+
+
+    <div class="container-5">
+        <div class="colom2">
+            <div class="box3">
+                <img src="image/best Saudi holiday.jpg" alt="">
+
+            </div>
+            <div class="box4">
+                <h3>
+                    Your best Saudi holiday awaits
+                </h3>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit <br>
+                . Quasi, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Modi, aliquid.
+             </p>
+             <button>Learn More</button>
+           
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+
+    <div class="container-1">
+        <h1>
+            Get inspired to plan your trip
+        </h1>
+        
+
+    </div>
+    <hr>
+
+
+
+
+
+    <div class="container4">
+        <div class="box-1">
+            <img src="image/travil thar img 1.webp" alt="">
+            <p>
+                Experiences & tours
+            </p>
+            <button>Learn More</button>
+        </div>
+        <div class="box-1">
+            <img src="image/travil thar img 2.jpg" alt="">
+            <p>
+                Activities & attractions
+            </p>
+            <button>Learn More</button>
+        </div>
+        <div class="box-1">
+            <img src="image/travil thar img 3.jpg" alt="">
+            <p>
+                Itineraries
+            </p>
+            <button>Learn More</button>
+        </div>
+        <div class="box-1">
+            <img src="image/travil thar img 4.jpeg" alt="">
+            <p>
+                Destinations
+
+            </p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+</body>
+</html>

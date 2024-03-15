@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+             width:100%;
+             height: 80px;
+             background-color: rgb(19, 20, 20);
+             display: flex;
+             /* margin: 20px; */
+
+        }
+       .navbar ul li a{
+              margin: 20px;
+              text-decoration: none;
+              position: relative;
+              color: aliceblue;
+              /* top: 10px; */
+             
+
+        }
+        .navbar button{
+            position: relative;
+            left: 500px;
+            padding: 8px;
+            background-color: rgb(68, 196, 153);
+            border: none;
+            
+        }
+        .navbar button a{
+          color: rgb(0, 0, 0);
+         
+        }
+        .navbar ul li{
+          list-style: none;
+        }
+        .navbar ul li img{
+          width: 30px;
+          position: relative;
+          top: 10px;
+        }
+        .box-1{
+            width: 50%;
+            height: 80vh;
+            /* background-color: rgb(26, 29, 28); */
+        }
+        .box-2{
+            width: 50%;
+            height: 80vh;
+            /* background-color: rgb(87, 110, 102); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(19, 18, 18);
+            display: flex;
+        }
+        .box-1 img{
+            width: 270px;
+            position: relative;
+            top: 60px;
+            left: 180px;
+        }
+        .mid-box-3{
+            width: 70%;
+            height: 50vh;
+            /* background-color: blue; */
+        }
+        .mid-box-3 h1{
+            font-size: 23px;
+            color: aqua;
+        }
+        .mid-box-3 h2 {
+            font-size: 40px;
+            color: rgb(251, 252, 252);
+        }
+        .mid-box-3 p{
+            /* font-size: 40px; */
+            color: rgb(189, 211, 211);
+        }
+        .mid-box-3 h2 span{
+            font-size: 40px;
+            color: aqua;
+        }
+        .mid-box-3 button {
+            padding: 9px;
+            border: 2px solid rgb(25, 197, 228);
+            background-color: black;
+            
+        }
+        .mid-box-3 button a {
+        text-decoration: none;
+        color: aqua;
+       
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <ul>
+                <li>
+                    <a href=""><img src="./task/laptop user.png" alt=""></a>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">More</a>
+
+                    <button><a href="">CONTACT</a></button>
+                </li>
+            </ul>
+            
+    </div>
+
+    <div class="container">
+        <div class="box-1">
+            <img src="./task/vicky.jpg" alt="">
+        </div>
+        <div class="box-2">
+            <div class="mid-box-3">
+                <h1>
+                    Vikash Saini
+                </h1>
+                <h2>
+                    i'm a web <br><span> Developer</span>
+                </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing <br>elit. Assumenda aspernatur sapiente numquam laboriosam alias? Nesciunt non ad distinctio unde? </p>
+
+                <button> <a href="">DOWNLOD CV</a> </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
